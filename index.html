@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container" class="container">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" required>
+            <span class="error-message" id="login-email-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required>
+            <span class="error-message" id="login-password-error"></span>
+        </div>
+        <div class="form-group">
+            <button onclick="login()">Login</button>
+        </div>
+        <div class="toggle-link" onclick="toggleForms()">Don't have an account? Sign up</div>
+    </div>
+    
+    <div id="signup-container" class="container" style="display:none;">
+        <h2>Sign Up</h2>
+        <div class="form-group">
+            <label for="signup-name">Name</label>
+            <input type="text" id="signup-name" required>
+            <span class="error-message" id="signup-name-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" required>
+            <span class="error-message" id="signup-email-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" required>
+            <span class="error-message" id="signup-password-error"></span>
+        </div>
+        <div class="form-group">
+            <button onclick="signup()">Sign Up</button>
+        </div>
+        <div class="toggle-link" onclick="toggleForms()">Already have an account? Login</div>
+    </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
